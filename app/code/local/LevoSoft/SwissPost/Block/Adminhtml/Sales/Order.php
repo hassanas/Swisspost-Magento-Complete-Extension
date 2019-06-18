@@ -1,19 +1,26 @@
 <?php
 /**
- * @package      LevoSoft
- * @subpackage   SwissPost
+ * Created by PHPro
+ *
+ * @package      DPD
+ * @subpackage   Shipping
  * @category     Checkout
- * @author     Hassan Ali Shahzad <levosoft786@gmail.com>
+ * @author       PHPro (info@phpro.be)
  */
 /**
- * Class LevoSoft_SwissPost_Adminhtml_DpdorderController
+ * Class DPD_Shipping_Block_Adminhtml_Sales_Order
  */
 class LevoSoft_SwissPost_Block_Adminhtml_Sales_Order extends Mage_Adminhtml_Block_Widget_Grid_Container
 {
-    .
-    .
-    .
-    .
-    .
-    
+    /**
+     * Sets blockgroup for our DPD Orders page.
+     */
+    public function __construct()
+    {
+        $this->_blockGroup = 'levosoft_swisspost';
+        $this->_controller = 'adminhtml_sales_order';
+        $this->_headerText = Mage::helper('levosoft_swisspost')->__('Swiss Post Orders');
+        parent::__construct();
+        $this->_removeButton('add');
+    }
 }

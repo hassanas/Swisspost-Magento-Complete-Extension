@@ -77,12 +77,264 @@
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-               .
-               .
-               .
-               .
-               .
-               .
+                <general>
+                    <label>General</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <soap_endpoint translate="label">
+                            <label>Mode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>diglin_swisspost/source_config_soapEndpoint</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </soap_endpoint>
+                        <username translate="label">
+                            <label>Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </username>
+                        <password translate="label">
+                            <label>Password</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </password>
+                        <franking_license translate="label">
+                            <label>Franking License</label>
+                            <comment>for example: 12345678</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </franking_license>
+                        <pro_clima translate="label">
+                            <label>Pro Clima</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </pro_clima>
+                    </fields>
+                </general>
+                <sender>
+                    <label>Sender Information</label>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <name1 translate="label">
+                            <label>Name 1</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </name1>
+                        <name2 translate="label">
+                            <label>Name 2</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </name2>
+                        <street translate="label">
+                            <label>Street</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </street>
+                        <zip translate="label">
+                            <label>ZIP</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </zip>
+                        <city translate="label">
+                            <label>City</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </city>
+                        <country translate="label">
+                            <label>Country</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>for example: 'CH'</comment>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </country>
+                        <domicile_post_office translate="label">
+                            <label>Domicile Post Office</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>for example: '3000 Bern'</comment>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </domicile_post_office>
+                    </fields>
+                </sender>
+                <label>
+                    <label>Shipping Label</label>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <layout translate="label">
+                            <label>Label Layout</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>diglin_swisspost/source_shipping_labelLayout</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </layout>
+                        <image_filetype>
+                            <label>Image File Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>diglin_swisspost/source_shipping_image_fileType</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </image_filetype>
+                        <image_resolution>
+                            <label>Image Resolution</label>
+                            <frontend_type>text</frontend_type>
+                            <source_model>diglin_swisspost/source_shipping_image_fileType</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </image_resolution>
+                        <image_output_folder translate="label">
+                            <label>Output Folder (./media/...)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </image_output_folder>
+                    </fields>
+                </label>
+                <shipping_method>
+                    <label>Shipping Method</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <normal translate="label">
+                            <label>Normal Shipping Methods</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>diglin_swisspost/source_shipping_method</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </normal>
+                        <priority>
+                            <label>Priority Shipping Methods</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>diglin_swisspost/source_shipping_method</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </priority>
+                        <express>
+                            <label>Express Shipping Methods</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>diglin_swisspost/source_shipping_method</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </express>
+                        <sallowspecific translate="label">
+                            <label>Barcode to Applicable Countries</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>5</sort_order>
+                            <frontend_class>shipping-applicable-country</frontend_class>
+                            <source_model>adminhtml/system_config_source_shipping_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sallowspecific>
+                        <specificcountry translate="label">
+                            <label>Barcode for Specific Countries</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>6</sort_order>
+                            <source_model>adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </specificcountry>
+                    </fields>
+                </shipping_method>
+                <rma>
+                    <label>Return merchandise authorization Barcode</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <method>
+                            <label>Barcode Service Code for RMA</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>diglin_swisspost/source_rma_method</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </method>
+                    </fields>
+                </rma>
             </groups>
         </levosoft_swisspost>
     </sections>

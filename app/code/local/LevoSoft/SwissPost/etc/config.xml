@@ -57,7 +57,12 @@
     <default>
         <carriers>
             <levosoftswisspost>
-               
+                <active>1</active>
+                <model>levosoft_swisspost/carrier</model>
+                <name>yogatree - swiss post</name>
+                <title>Swiss Post Delivery</title>
+                <description>yogatree provides delivery with swiss post service</description>
+                <sort_order>1</sort_order>
             </levosoftswisspost>
         </carriers>
     </default>
